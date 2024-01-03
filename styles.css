@@ -1,0 +1,199 @@
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(175deg, rgba(2,0,36,1) 0%, rgba(148,96,134,1) 46%, rgba(0,212,255,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: Playpen Sans;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(92, 92, 138, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.25s, opacity 0.25s;
+}
+
+.letter {
+  background-color: #fff;
+  padding: 20px;
+  padding-top: 40px;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.button1 {
+  margin-top: 10px;
+  background-color: cadetblue;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.photo {
+  display: none;
+  width: auto;
+  height: 500px;
+  cursor: grab;
+  float: right;
+}
+
+.yesPic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoButton {
+  bottom: 20px;
+  font-weight: bold;
+  background-color: cadetblue;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(92, 92, 138, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay-content-1 {
+  background-color: white;
+  padding: 20px;
+  padding-top: 40px;
+  border-radius: 5px;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  max-height: 590px;
+  overflow: auto;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.button {
+  padding: 1%;
+  text-align: center;
+  justify-content: center;
+}
+
+.yes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#yesButton {
+  font-weight: bold;
+  background-color: cadetblue;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#noButton {
+  font-weight: bold;
+  background-color: cadetblue;
+  position: absolute;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.yesDisplay {
+  padding: 1%;
+  padding-bottom: 5%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.noButtonPhotoContainer {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width:320px) {
+  .photo {
+      width: auto;
+      height: 300px;
+  }
+  .yesPic {
+      width: auto;
+      height: 300px;
+  }
+}
+
+@media (min-width:480px) {
+  .photo {
+      width: auto;
+      height: 320px;
+  }
+  .yesPic {
+      width: auto;
+      height: 320px;
+  }
+}
+
+@media (min-width:600px) {
+  .photo {
+      width: auto;
+      height: 380px;
+  }
+  .yesPic {
+      width: auto;
+      height: 380px;
+  }
+}
+
